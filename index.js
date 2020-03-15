@@ -80,7 +80,7 @@ function temperatureCtoF(celc) {
 */
 function temperatureInF(temp, unit) {
 
-  if (unit = "C"){
+  if (unit == "C"){
     let result = temperatureCtoF(temp);
     return result + "F";
     }
