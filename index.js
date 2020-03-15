@@ -293,8 +293,9 @@ return modelinventory;
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(/* code here */) {
+function getCarInfoById(inventory, number) {
   /* code here */
+  return `This is a ${inventory[number - 1].car_make} ${inventory[number - 1].car_model}`;
 }
 
 /**
