@@ -78,8 +78,16 @@ function temperatureCtoF(celc) {
  * 
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
-function temperatureInF(/* code here */) {
-  /* code here */
+function temperatureInF(temp, unit) {
+  /* code here 
+  if (unit = "C"){
+    let result = temperatureCtoF(temp);
+    return result + "F";
+    }
+  else{
+    return temp + "F";
+  }
+*/
 }
 
 
@@ -99,8 +107,13 @@ function temperatureInF(/* code here */) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(id, name, email) {
+  let Person = {};
+  Person.id = id;
+  Person.name = name;
+  Person.email = email;
+  return Person;
+
 }
 
 /**
@@ -116,8 +129,9 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
+function getName(Person) {
   /* code here */
+  return `Hello, my name is ${Person.name}`;
 }
 
 
@@ -136,8 +150,10 @@ function getName(/* code here */) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
+function appleIndex(fruits) {
   /* code here */
+  var a = fruits.indexOf('apple');
+  return a;
 }
 
 /**
@@ -155,8 +171,17 @@ function appleIndex(/* code here */) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
+function isItAnApple(fruits) {
   /* code here */
+  const newfruits = [];
+  for (i = 0; i < fruits.length; i++) {
+  if (fruits[i] == 'apple'){
+    newfruits.push(true);
+  } else {
+    newfruits.push(false);
+  }
+}
+return newfruits;
 }
 
 
