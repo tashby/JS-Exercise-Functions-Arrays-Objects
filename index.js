@@ -79,7 +79,7 @@ function temperatureCtoF(celc) {
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
 function temperatureInF(temp, unit) {
-  /* code here 
+
   if (unit = "C"){
     let result = temperatureCtoF(temp);
     return result + "F";
@@ -87,7 +87,7 @@ function temperatureInF(temp, unit) {
   else{
     return temp + "F";
   }
-*/
+
 }
 
 
@@ -240,6 +240,8 @@ function get3rdCar(inventory) {
 */
 function getCarInfoByIndex(inventory, index) {
   /* code here */
+  const thePick = inventory[index];
+  return `The is a ${thePick.car_make} ${thePick.car_model}`
 }
 
 /**
